@@ -220,3 +220,215 @@ body {
     object-fit: cover;
     border-radius: 0 0 0 110px;
 }
+
+/* CONTACT DETAILS AND FORM ONLY*/
+
+.Profile-container > .contact-section {
+    grid-column: 1;
+
+    width: 100%;
+    max-width: 600px;
+
+    padding: 0;
+    background-color: transparent;
+}
+
+
+/*EMAIL, LINKEDIN, GITHUB AND LOCATION */
+
+.contact-section .contact-list {
+    display: grid;
+    gap: 15px;
+
+    margin: 30px 0;
+
+    font-style: normal;
+}
+
+
+/* Each contact-information row */
+
+.contact-section .contact-item {
+    display: grid;
+    grid-template-columns: 45px 1fr;
+    gap: 15px;
+
+    align-items: center;
+
+    padding-bottom: 13px;
+    border-bottom: 1px solid #d4e0e7;
+}
+
+
+/* Circular icon */
+
+.contact-section .contact-icon {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background-color: #d9edf8;
+    color: #086198;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* Email, LinkedIn, GitHub and Location labels */
+
+.contact-section .contact-label {
+    display: block;
+    margin-bottom: 3px;
+
+    color: #708896;
+    font-size: 13px;
+}
+
+
+/* Contact links and location */
+
+.contact-section .contact-item a,
+.contact-section .contact-value {
+    color: #153d5a;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+
+/* Link hover effect */
+
+.contact-section .contact-item a:hover {
+    color: #269321;
+    text-decoration: underline;
+}
+
+
+/* CONTACT FORM */
+
+.contact-section .contact-form {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+
+    padding: 25px;
+
+    border: 1px solid #d4e0e7;
+    border-radius: 8px;
+
+    background-color: #ffffff;
+
+    box-shadow: 0 8px 25px rgba(21, 61, 90, 0.10);
+}
+
+
+/* Each label and input group */
+
+.contact-section .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+
+/* Subject and message occupy both columns */
+
+.contact-section .full-width {
+    grid-column: 1 / -1;
+}
+
+
+/* Form labels */
+
+.contact-section .form-group label {
+    color: #153d5a;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* Input boxes and message box */
+
+.contact-section .form-group input,
+.contact-section .form-group textarea {
+    width: 100%;
+    padding: 12px 14px;
+
+    border: 1px solid #b8cbd6;
+    border-radius: 5px;
+
+    background-color: #f9fcfd;
+    color: #153d5a;
+
+    font-family: inherit;
+    font-size: 14px;
+}
+
+
+/* Message box specifically */
+
+.contact-section .form-group textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+
+/* Styling when typing inside a field */
+
+.contact-section .form-group input:focus,
+.contact-section .form-group textarea:focus {
+    border-color: #086198;
+    outline: 3px solid rgba(8, 97, 152, 0.12);
+}
+
+
+/* Placeholder text */
+
+.contact-section .form-group input::placeholder,
+.contact-section .form-group textarea::placeholder {
+    color: #91a4af;
+}
+
+
+/*SEND MESSAGE BUTTON */
+
+.contact-section .send-button {
+    grid-column: 1 / -1;
+    justify-self: start;
+
+    padding: 13px 27px;
+
+    border: 2px solid #086198;
+    border-radius: 5px;
+
+    background-color: #086198;
+    color: #ffffff;
+
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+/* Send-button hover */
+
+.contact-section .send-button:hover {
+    background-color: transparent;
+    color: #086198;
+
+    transform: translateY(-2px);
+}
