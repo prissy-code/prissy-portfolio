@@ -44,10 +44,34 @@ body {
     align-items: center;
 }
 
-#logo {
-    color: #086198;
-    font-size: 24px;
-    font-weight: bold;
+a#logo {
+   width: 85px;
+   height: 85px;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   border: 2px solid #0874b9;
+   border-radius: 50%;
+
+   color: #3e3e3e;
+   background-color: transparent;
+
+   font-size: 18px;
+   font-weight: normal;
+   text-decoration: none;
+
+   transition: 
+        background-color 0.3s ease, 
+        color 0.3s ease,
+        transform 0.3s ease
+}
+
+a#logo:hover {
+    background-color: #0874b9;
+    color: #ffffff;
+    transform: scale(1.05);
 }
 
 .nav-1 {
@@ -219,6 +243,18 @@ body {
 
     object-fit: cover;
     border-radius: 0 0 0 110px;
+}
+
+
+
+/*footer*/
+footer p{
+    /*color:#ffffff;*/
+    color: #345b73;
+    text-align:center;
+   /*  padding:10px;
+    margin-bottom:0px;
+    margin-top:20px;*/
 }
 
 /* CONTACT DETAILS AND FORM ONLY*/
@@ -423,10 +459,12 @@ body {
         transform 0.3s ease;
 }
 
+
 /* Send-button hover */
 
 .contact-section .send-button:hover {
     background-color: transparent;
     color: #086198;
+
     transform: translateY(-2px);
 }
