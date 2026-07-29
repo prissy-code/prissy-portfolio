@@ -423,12 +423,10 @@ body {
         transform 0.3s ease;
 }
 
-
 /* Send-button hover */
 
 .contact-section .send-button:hover {
     background-color: transparent;
     color: #086198;
-
     transform: translateY(-2px);
 }
